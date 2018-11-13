@@ -8,7 +8,7 @@ body {
 	/* Margin bottom by footer height */
 	margin-bottom: 60px;
 	font-family: 'Merriweather', serif;
-	font-size: 10pt;
+	font-size: 12pt;
 }
 .footer {
 	position: absolute;
@@ -43,4 +43,7 @@ code {
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Oswald', sans-serif;
+}
+h1 > a {
+	color: #000;
 }
