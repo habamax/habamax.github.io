@@ -1,4 +1,5 @@
 ---
+layout: default
 title: habamax Home
 ---
 <!DOCTYPE html>
@@ -11,6 +12,16 @@ title: habamax Home
 	<body>
 		<h1>{{ "Test stuff on github" | downcase }}</h1>
 		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat fermentum pretium. Cras eu dolor imperdiet justo mattis pulvinar. Cras nec lectus ligula. Proin elementum luctus elit, a tincidunt quam facilisis non. Nunc quis mauris non turpis finibus luctus. Maecenas ante sapien, sagittis quis accumsan in, feugiat quis sem. Praesent et auctor libero.</p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Maecenas feugiat fermentum pretium. Cras eu dolor imperdiet
+		justo mattis pulvinar. Cras nec lectus ligula. Proin elementum
+		luctus elit, a tincidunt quam facilisis non. Nunc quis mauris
+		non turpis finibus luctus. Maecenas ante sapien, sagittis quis
+		accumsan in, feugiat quis sem. Praesent et auctor libero.</p>
+		<ul class="posts">
+			{% for post in site.posts %}
+			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
 	</body>
 </html>
