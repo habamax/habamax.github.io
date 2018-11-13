@@ -1,10 +1,8 @@
 <header class="sticky row">
-	<div class="container">
-		<div class="col-sm-12 col-md-10 col-md-offset-1">
-			{% for item in site.data.nav %}
-			<!-- <li><a href="{{ item.link }}" {% if page.url == item.link %}class="button"{% endif %}>{{ item.name }}</a></li> -->
-			<a href="{{ item.link }}" class="button">{{ item.name }}</a>
-			{% endfor %}
-		</div>
+	<div class="col-sm-12 col-md-10 col-md-offset-1">
+		{% for item in site.data.nav %}
+		<!-- <li><a href="{{ item.link }}" {% if page.url == item.link %}class="button"{% endif %}>{{ item.name }}</a></li> -->
+		<a href="{{ item.link }}" class="button">{{ item.name }}</a>
+		{% endfor %}
 	</div>
 </header>
