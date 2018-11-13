@@ -3,12 +3,12 @@ layout: default
 title: Maxim Kim
 ---
 {% for post in site.posts limit:10 %}
-<div class="post-preview mt-4">
+<div class="post-preview">
 	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 	<p class="text-secondary small">{{ post.date | date: "%Y-%m-%d" }}</p>
 	{{ post.excerpt }}
 	{% if post.excerpt != post.content %}
-	<a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+	<a href="{{ site.baseurl }}{{ post.url }}">>>>>>></a>
 	{% endif %}
 </div>
 {% endfor %}

@@ -5,6 +5,9 @@ title: About me
 
 # About me
 
-* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-* Maecenas feugiat fermentum pretium.
-* Cras eu dolor imperdiet justo mattis pulvinar.
+Hi it is me! Ahoy, привет!
+
+# Contacts
+
+* Twitter: @mxmkm
+* Email: habamax(:)gmail.com
