@@ -14,4 +14,5 @@ Nah. Let it be some facts and preferences instead.
 * Functional over Imperative -- although I am more experienced in Imperative.
 * Racket over Common Lisp -- for fun of course.
 * Long time ago I have created Vimwiki. Now there are other ppl who maintain it though.
+* Light over Dark backgrounds -- not always but most of the time.
 
