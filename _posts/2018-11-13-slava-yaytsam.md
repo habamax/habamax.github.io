@@ -1,7 +1,6 @@
 ---
 title: Слава яйцам!
 layout: post
-comments: true
 ---
 
 Похоже, что я смог настроить простейший Jekyll блог.
