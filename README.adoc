@@ -1,0 +1,5 @@
+= Personal stuff
+
+Storage for the Jekyll-based Github-hosted personal pages.
+
+https://habamax.github.io
