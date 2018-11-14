@@ -5,9 +5,5 @@ title: About me
 
 # About me
 
-Hi it is me! Ahoy, привет!
+My name is Max and this page should be deleted.
 
-# Contacts
-
-* Twitter: @mxmkm
-* Email: habamax(:)gmail.com
