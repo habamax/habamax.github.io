@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About me
+title: Maxim Kim? Who cares?
 ---
 
 # About me
