@@ -17,20 +17,20 @@ title: Maxim Kim
 {% if paginator.total_pages > 1 %}
 <div class="container mt-5"> 
 	<div class="row justify-content-md-center">
-		<div class="col-md-auto">
+		<div class="col-md-auto btn-group" role="group">
 			{% if paginator.previous_page %}
-			<a class="btn btn-sm btn-outline-secondary mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+			<a class="btn btn-sm btn-outline-secondary" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
 			{% else %}
-			<span class="btn btn-sm btn-outline-secondary mr-1">&laquo;</span>
+			<span class="btn btn-sm btn-outline-secondary">&laquo;</span>
 			{% endif %}
 
 			{% for page in (1..paginator.total_pages) %}
 			{% if page == paginator.page %}
-			<span class="btn btn-sm mr-1">{{ page }}</span>
+			<span class="btn btn-sm btn-secondary">{{ page }}</span>
 			{% elsif page == 1 %}
-			<a class="btn btn-sm btn-outline-secondary mr-1" href="/">{{ page }}</a>
+			<a class="btn btn-sm btn-outline-secondary" href="/">{{ page }}</a>
 			{% else %}
-			<a class="btn btn-sm btn-outline-secondary mr-1" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			<a class="btn btn-sm btn-outline-secondary" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
 			{% endif %}
 			{% endfor %}
 
