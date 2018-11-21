@@ -3,8 +3,8 @@ title: Forza!
 layout: post
 ---
 
-- ☑ Jekyll + github <2018-11-21 17:49>
-- ☑ Jekyll pagination <2018-11-21 17:51>
-- ☐ Tags <2018-11-21 17:52>
-- [ ] Test
-- [x] Test2
+- [x]  Jekyll + github <2018-11-21 17:49>
+- [x]  Jekyll pagination <2018-11-21 17:51>
+- [ ]  Tags <2018-11-21 17:52>
+- [ ]  Very new oneTest
+- [x]  Test2 new test
