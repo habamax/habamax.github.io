@@ -21,7 +21,7 @@ title: Maxim Kim
 			{% if paginator.previous_page %}
 			<a class="btn btn-sm btn-outline-secondary mr-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
 			{% else %}
-			<span class="btn btn-sm btn-outline-secondary mr-1">&laquo; Prev</span>
+			<span class="btn btn-sm btn-outline-secondary mr-1">&laquo;</span>
 			{% endif %}
 
 			{% for page in (1..paginator.total_pages) %}
@@ -37,7 +37,7 @@ title: Maxim Kim
 			{% if paginator.next_page %}
 			<a class="btn btn-sm btn-outline-secondary" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
 			{% else %}
-			<span class="btn btn-sm btn-outline-secondary">Next &raquo;</span>
+			<span class="btn btn-sm btn-outline-secondary">&raquo;</span>
 			{% endif %}
 		</div>
 	</div>
