@@ -3,11 +3,10 @@ layout: post
 title: Бытие определяет сознание или инструменты vs языки программирования
 ---
 
-<!-- ![Emacs screenshot](/assets/images/2018-11-23_12-28-44.png) -->
+![Emacs screenshot](/assets/images/2018-11-23_12-28-44.png)
 
-<img src="/assets/images/2018-11-23_12-28-44.png">
 
-<img src="/assets/images/2018-11-23_12-28-44.png" width="829" height="673">
+![Emacs screenshot](/assets/images/2018-11-23_12-28-44.jpg)
 
 Однажды я решил поиспользовать Clojure для допила мелкого "вбоквел"
 функционала в проекте для большого европейского банка.
