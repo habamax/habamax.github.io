@@ -10,5 +10,5 @@ Now you can paste images to the document from clipboard:
 <img src="/assets/gifs/asciidoctor-pasteimg.gif" class="img-fluid" alt="animated gif with Vim pasting clipboard images">
 
 * No documentation yet. 
-* Wouldn't work for neovim for sure, as I use vim's job stuff there. 
+* Doesn't work for neovim for now as I use vim's job stuff there. 
 * External dependency (via settings) for GraphicsMagic (windows), `pngpaste` (OSX), and I am not sure what Linux should use.
