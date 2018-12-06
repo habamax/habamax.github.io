@@ -11,6 +11,7 @@ You know, lists like this:
     - [x] This is done
     - [ ] This is not
     - [x] Ping this dude to ping that dude to provide bla bla bla
+
 <!-- more -->
 
 That might look like this in HTML:
