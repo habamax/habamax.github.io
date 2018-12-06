@@ -24,7 +24,7 @@ or in PDF:
 
 
 While vim is not emacs in terms of "you can do whatever you want with it", you
-can do a lot with vim and it's vimscript:
+can do a lot with vim and its vimscript:
 
 <img src="/assets/gifs/vim-list-fun.gif" class="img-fluid" alt="animated gif with Vim toggling list items">
 
