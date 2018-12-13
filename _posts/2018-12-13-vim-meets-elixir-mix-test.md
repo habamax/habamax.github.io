@@ -13,8 +13,8 @@ It is good! The language, the Erlang platform, José -- such a nice composition.
 
 So, he uses tests a lot. Like alot.
 
-    - [x] This is indeed a very good practice. I want that too.
-    - [ ] It is convenient in GVim for Windows.
+- [x] This is indeed a very good practice. I want that too.
+- [ ] It is convenient in GVim for Windows.
 
 Nope, it is inconvenient. Built-in terminal -- inconvenient (you can't `:term
 mix test`). Separate `cmd` window -- kind of OK, but still inconvenient. Plugin
