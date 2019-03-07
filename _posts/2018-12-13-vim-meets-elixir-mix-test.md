@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Vim meets Elixir mix test
+layout: post
 ---
 
 Out of curiousity have started following José Valim, creator of Elixir

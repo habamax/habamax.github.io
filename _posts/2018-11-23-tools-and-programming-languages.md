@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Бытие определяет сознание или инструменты vs языки программирования
+layout: post
 ---
 
 <img src="/assets/images/2018-11-23_12-28-44.png" class="img-fluid" alt="Emacs screenshot">

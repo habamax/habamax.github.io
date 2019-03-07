@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Paste clipboard images to Asciidoctor document from Vim 
+layout: post
 ---
 
 More improvements for [vim-asciidoctor](https://github.com/habamax/vim-asciidoctor) plugin. 

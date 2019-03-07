@@ -1,6 +1,6 @@
 ---
-layout: post
 title: Vim list-item toggling fun
+layout: post
 ---
 
 I do almost all my doc stuff in vim + asciidoctor and it includes various list
