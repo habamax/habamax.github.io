@@ -84,6 +84,7 @@ of the title...
 
 To fix this you have to setup your foldtext, add to your `.vimrc`:
 
+{% raw %}
 ```vim
 " My fancy foldtext
 set foldtext=MyFoldText()
@@ -108,6 +109,7 @@ fu! MyFoldText()
 endfu
 
 ```
+{% endraw %}
 
 It uses some unicode charachters your font has no support for. Just change them
 to whatever you prefer.
