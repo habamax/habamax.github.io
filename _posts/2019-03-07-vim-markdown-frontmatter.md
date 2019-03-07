@@ -15,7 +15,7 @@ Like the picture shows:
 
 So, let's fix it!
 
-## Highlight fronmatter
+# Highlight fronmatter
 
 Create a file `~/.vim/after/syntax/markdown.vim`:
 
@@ -33,7 +33,7 @@ Now reopen your markdown file to see:
 
 ![highlight frontmatter markdown in Vim](/assets/images/2019-03-07_12-38-51.png){: .img-fluid}
 
-## Fix folding
+# Fix folding
 
 Create a file `~/.vim/after/ftplugin/markdown.vim`:
 
