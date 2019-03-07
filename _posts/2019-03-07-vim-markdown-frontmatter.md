@@ -11,7 +11,7 @@ pandoc frontmatter:
 
 Like the picture shows:
 <!-- more -->
-![As is built in markdown in Vim](/assets/images/2019-03-07_12-30-29.png)
+![As is built in markdown in Vim](/assets/images/2019-03-07_12-30-29.png){: .img-fluid}
 
 So, let's fix it!
 
@@ -111,5 +111,5 @@ endfu
 ```
 {% endraw %}
 
-It uses some unicode charachters your font has no support for. Just change them
-to whatever you prefer.
+Change unicode characters to whatever you prefer if your font has no support
+for ones in this function.
