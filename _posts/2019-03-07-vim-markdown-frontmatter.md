@@ -31,7 +31,7 @@ syntax region yamlFrontmatter start=/\%^---$/ end=/^---$/ keepend contains=@Yaml
 
 Now reopen your markdown file to see:
 
-![highlight frontmatter markdown in Vim](/assets/images/2019-03-07_12-38-51.png)
+![highlight frontmatter markdown in Vim](/assets/images/2019-03-07_12-38-51.png){: .img-fluid}
 
 ## Fix folding
 
@@ -76,7 +76,7 @@ We just copy-pasted it here with some changes:
 
 Reload your markdonw file and it should look like:
 
-![Fold frontmatter markdown in Vim](/assets/images/2019-03-07_12-51-25.png)
+![Fold frontmatter markdown in Vim](/assets/images/2019-03-07_12-51-25.png){: .img-fluid}
 
 
 But wait! It doesn't look this fancy! I see dashes in frontmatter fold instead
