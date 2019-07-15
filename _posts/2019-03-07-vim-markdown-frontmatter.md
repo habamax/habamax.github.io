@@ -74,7 +74,7 @@ We just copy-pasted it here with some changes:
 - do not define a fold for a setext heading if there is no empty line above it;
 - define a fold for a frontmatter.
 
-Reload your markdonw file and it should look like:
+Reload your markdown file and it should look like:
 
 ![Fold frontmatter markdown in Vim](/assets/images/2019-03-07_12-51-25.png){: .img-fluid}
 
