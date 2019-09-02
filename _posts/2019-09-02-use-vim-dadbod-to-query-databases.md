@@ -1,9 +1,9 @@
 ---
-title: Use vim-dadbod to Query Databases
+title: Use vim-dadbod to query databases
 layout: post
 ---
 
-**TLDR**
+**TLDR:**
 Query your databases from any vim buffer:
 
 <img src="/assets/gifs/tldr-vim-dadbod.gif" class="img-fluid" alt="tldr animated gif with vim-dadbod">
@@ -25,12 +25,12 @@ installed.
 
 You can set up global `g:db` variable to omit database urls:
 
-  let g:db = "postgresql://postgres:@localhost/postgres"
+    let g:db = "postgresql://postgres:@localhost/postgres"
 
 Or use buffer local `b:db` variable to do the same (but you can have per
 buffer database setup):
 
-  let b:db = "postgresql://postgres:@localhost/postgres"
+    let b:db = "postgresql://postgres:@localhost/postgres"
 
 With that set up you can just call `:DB` command:
 
@@ -41,12 +41,11 @@ not the most convenient thing to do...
 
 So, let's fix it!
 
-# Add Some Goodies... Operator
+# Add some goodies... operator
 
 I will use buffer local `b:db` variable to store our database url.
 
-What I want to have is to run queries under cursor by pressing `<leader>db`
-shortcut + text object.
+What I want to have is to run queries under cursor by pressing `<leader>db` + text object.
 
 Let us see what is in the help: `:h map-operator`. There is an example how to
 create operator, let us reuse and slightly change it:
@@ -107,18 +106,16 @@ Example of using this operator:
 <img src="/assets/gifs/vim-dadbod-usage-operator.gif" class="img-fluid" alt="animated gif with vim-dadbod usage with operator">
 
 
-# Databases. Choose the One.
+# Databases. Choose the one.
 
 If you have more than 1 database to query, it would be quite cumbersome to
 manually set `b:db` every time you want to query another database.
 
-Let's fix this too!
+There is a new `:h popup-menu` in vim -- let us pick databases using it.
 
 **NOTE:** It uses new popup menu stuff from vim (use recent vim built from source code
 or for windows folks, there is a place with pre-built binaries), you can of
 course use commands with autocompletion but I wanted to tinker with popups.
-
-There is a new `:h popup-menu` in vim -- let us pick databases using it.
 
 First of all, database info should be stored somewhere, let it be list of
 dictionaries:
@@ -180,7 +177,7 @@ Example usage:
 
 Usually I use DBeaver (which is by the way awesome) to explore the database
 and do heavy sql stuff but for quick and dirty queries I tend to use
-vim-dadbod more and more.
+`vim-dadbod` more and more.
 
 
 Have fun!
