@@ -13,7 +13,7 @@ Query your databases from any vim buffer:
 # What is vim-dadbod
 
 It is [vim plugin](https://github.com/tpope/vim-dadbod) (from
-the Tim Pope) to do database queries showing result in a separate buffer.
+the Tim Pope) to do database queries showing results in a separate buffer.
 
 It has only one command `:DB` that does all the stuff needed.
 
