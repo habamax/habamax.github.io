@@ -123,6 +123,13 @@ dictionaries:
 ```vim
 let g:dadbods = []
 let db = #{
+		\name: "Test Postgres DB",
+		\url: "postgresql://postgres:@localhost/postgres"
+		\}
+
+call add(g:dadbods, db)
+
+let db = #{
 		\name: "DEV Stage",
 		\url: "postgresql://stage_user:dummypassword@test.example.com/stage"
 		\}
@@ -136,15 +143,9 @@ let db = #{
 
 call add(g:dadbods, db)
 
-""" TEST
-
-let db = #{
-		\name: "Test Postgres DB",
-		\url: "postgresql://postgres:@localhost/postgres"
-		\}
-
-call add(g:dadbods, db)
-
+" if g:db and b:db is set up -- b:db will be used.
+" so g:db would serve as a default database (first in the list)
+let g:db = g:dadbods[0].url
 ```
 
 **NOTE:** It is not really safe to store your credentials in your dotfiles
@@ -181,3 +182,23 @@ and do heavy sql stuff but for quick and dirty queries I tend to use
 
 
 Have fun!
+
+# P.S.
+
+It turns out vim-dadbod is "operator ready":
+
+![tpope tweet](assets/images/2019-09-04_use-vim-dadbod-to-query-databases_01.png)
+
+You don't have to create your own operator function, just use what is already
+there:
+
+```vim
+xnoremap <expr> <Plug>(DBExe)     db#op_exec()
+nnoremap <expr> <Plug>(DBExe)     db#op_exec()
+nnoremap <expr> <Plug>(DBExeLine) db#op_exec() . '_'
+
+xmap <leader>db  <Plug>(DBExe)
+nmap <leader>db  <Plug>(DBExe)
+omap <leader>db  <Plug>(DBExe)
+nmap <leader>dbb <Plug>(DBExeLine)
+```
