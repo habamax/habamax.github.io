@@ -187,7 +187,7 @@ Have fun!
 
 It turns out vim-dadbod is "operator ready":
 
-![tpope tweet](assets/images/2019-09-04_use-vim-dadbod-to-query-databases_01.png)
+![tpope tweet](/assets/images/2019-09-04_use-vim-dadbod-to-query-databases_01.png){: .img-fluid}
 
 You don't have to create your own operator function, just use what is already
 there:
