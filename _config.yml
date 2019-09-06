@@ -1,5 +1,7 @@
 excerpt_separator: "<!-- more -->"
 
+highlighter: rouge
+
 plugins: [jekyll-paginate] 
 paginate: 10
 paginate_path: /page:num
