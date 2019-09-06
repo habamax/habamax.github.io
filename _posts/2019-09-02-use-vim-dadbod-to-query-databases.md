@@ -3,6 +3,12 @@ title: Use vim-dadbod to query databases
 layout: post
 ---
 
+```ruby
+if True do
+  puts "hello test highlighting"
+end
+```
+
 **TLDR:**
 Query your databases from any vim buffer:
 
