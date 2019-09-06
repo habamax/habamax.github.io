@@ -50,7 +50,7 @@ What I want to have is to run queries under cursor by pressing `<leader>db` + te
 Let us see what is in the help: `:h map-operator`. There is an example how to
 create operator, let us reuse and slightly change it:
 
-```vim
+```viml
 "" operator mapping
 func! DBExe(...)
 	if !a:0
@@ -81,7 +81,7 @@ with what was visually selected or used as text-object.
 
 Let's add some plugs and mappings:
 
-```vim
+```viml
 xnoremap <expr> <Plug>(DBExe)     DBExe()
 nnoremap <expr> <Plug>(DBExe)     DBExe()
 nnoremap <expr> <Plug>(DBExeLine) DBExe() . '_'
@@ -120,7 +120,7 @@ course use commands with autocompletion but I wanted to tinker with popups.
 First of all, database info should be stored somewhere, let it be list of
 dictionaries:
 
-```vim
+```viml
 let g:dadbods = []
 let db = #{
 		\name: "Test Postgres DB",
@@ -156,7 +156,7 @@ this is just for simplicity. Personally I have it in a separate
 Having that list of our databases we can come up with a command to select
 current database (for an active buffer):
 
-```vim
+```viml
 command! DBSelect :call popup_menu(map(copy(g:dadbods), {k,v -> v.name}), #{
 			\callback: 'DBSelected'
 			\})
@@ -192,7 +192,7 @@ It turns out vim-dadbod is "operator ready":
 You don't have to create your own operator function, just use what is already
 there:
 
-```vim
+```viml
 xnoremap <expr> <Plug>(DBExe)     db#op_exec()
 nnoremap <expr> <Plug>(DBExe)     db#op_exec()
 nnoremap <expr> <Plug>(DBExeLine) db#op_exec() . '_'
