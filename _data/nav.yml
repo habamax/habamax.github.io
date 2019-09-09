@@ -1,4 +1,4 @@
-- name: :echo "posts"
+- name: :echo g:posts
   link: /
 - name: :s/about me/no way/g
   link: /about.html
