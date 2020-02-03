@@ -13,9 +13,9 @@ But I think it should look more like this:
 
 <img src="/assets/images/2020-02-03_15-13-21.png" class="img-fluid" alt="folding with expr ">
 
-It was not very hard to implement, so here it is:
+To have this folding, create a file in your 
+[~/.vim/after/ftplugin/python.vim](https://github.com/habamax/.vim/blob/aa36f36b498f1d26a10a571dda22477176659fce/after/ftplugin/python.vim)
 
-Create a file in your `.vim/after/ftplugin/python.vim`
 ```vim
 func! FoldIndent() abort
     let indent = indent(v:lnum)/&sw
@@ -31,6 +31,8 @@ endfunc
 setlocal foldexpr=FoldIndent()
 setlocal foldmethod=expr
 ```
+
+And that is all.
 
 This file would be loaded for all python buffers applying new folding.
 
