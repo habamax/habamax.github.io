@@ -15,6 +15,7 @@ But I think it should look more like this:
 
 To have this folding, create a file in your 
 [~/.vim/after/ftplugin/python.vim](https://github.com/habamax/.vim/blob/aa36f36b498f1d26a10a571dda22477176659fce/after/ftplugin/python.vim)
+with the following contents:
 
 ```vim
 func! FoldIndent() abort
