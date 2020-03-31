@@ -122,23 +122,23 @@ dictionaries:
 
 ```viml
 let g:dadbods = []
-let db = #{
-		\name: "Test Postgres DB",
-		\url: "postgresql://postgres:@localhost/postgres"
+let db = {
+		\"name": "Test Postgres DB",
+		\"url": "postgresql://postgres:@localhost/postgres"
 		\}
 
 call add(g:dadbods, db)
 
-let db = #{
-		\name: "DEV Stage",
-		\url: "postgresql://stage_user:dummypassword@test.example.com/stage"
+let db = {
+		\"name": "DEV Stage",
+		\"url": "postgresql://stage_user:dummypassword@test.example.com/stage"
 		\}
 
 call add(g:dadbods, db)
 
-let db = #{
-		\name: "DEV Main",
-		\url: "postgresql://main_user:dummypassword@test.example.com/main"
+let db = {
+		\"name": "DEV Main",
+		\"url": "postgresql://main_user:dummypassword@test.example.com/main"
 		\}
 
 call add(g:dadbods, db)
@@ -157,8 +157,8 @@ Having that list of our databases we can come up with a command to select
 current database (for an active buffer):
 
 ```viml
-command! DBSelect :call popup_menu(map(copy(g:dadbods), {k,v -> v.name}), #{
-			\callback: 'DBSelected'
+command! DBSelect :call popup_menu(map(copy(g:dadbods), {k,v -> v.name}), {
+			\"callback": 'DBSelected'
 			\})
 
 func! DBSelected(id, result)
