@@ -1,3 +1,2 @@
 theme: minima
-title: "%s/some \\(stuff\\)/random \\1/"
-description: hubba hubba hubba
+title: ":%s/some \\(stuff\\)/random \\1/"
