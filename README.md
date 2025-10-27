@@ -1,2 +1,2 @@
-# habamax.github.io
-Maxim Kim
+# Test
+Lorem ipsum FTW!
